@@ -1151,7 +1151,620 @@ hr {
     }
 
     .copyright__section {
-        padding: 32px;
+        padding: 24px 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
     }
 
+    .copyright__text {
+        font-size: 12px;
+    }
+
+    .footer__social {
+        font-size: 18px;
+    }
+
+    .footer__links {
+
+    }
+
+    .legal {
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .pricing__intro {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing__para {
+        max-width: 300px;
+    }
+
+    .plan {
+        margin-bottom: 24px;
+    }
+
+    .pricing__svg {
+        bottom: -25px;
+        left: 5px;
+    }
+
+    .testimonials__img {
+        height: 400px;
+        width: 450px;
+    }
+
+    .scroll {
+        margin-top: 12px;
+    }
+
+    .testimonials__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .values__container {
+        padding: 24px 0;
+    }
+
+    #home {
+        padding: 24px;
+    }
+
+    .features--row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio__container {
+        padding: 24px 0;
+    }
+
+    .features__container {
+        padding: 24px 0;
+        text-align: center;
+    }
+
+    .features--wrapper {
+        text-align: center;
+        padding: 16px;
+    }
+
+    .feature {
+        width: calc(100% / 1);
+        text-align: center;
+    }
+
+    .values__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 440px;
+    }
+
+    .testimonials__text {
+        width: 520px;
+        padding-right: 64px;
+    }
+
+    .reviewer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 392px;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .values__row {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .values__text {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .values__examples {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 420px;
+    }
+
+    .value__header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .value {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features__para--primary {
+        padding-right: 18px;
+    }
+
+    .values__button {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .steps__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .steps__text {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .steps__number {
+        padding-top: 8px;
+        padding-right: 24px;
+    }
+
+    .steps__list {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step__section {
+        margin: 0;
+    }
+
+    .steps__svg {
+        left: 225px;
+        top: 200px;
+    }
+
+    .steps__img {
+        padding: 48px 48px 16px 48px;
+    }
+
+    .steps__span {
+        margin-top: 32px;
+    }
+
+    .values__img {
+        width: 420px;
+        margin-top: 48px;
+    }
+
+    .testimonials__container {
+        padding: 24px 0;
+    }
+
+    .pricing__container {
+        padding: 24px 0;
+    }
+
+    .steps__container {
+        padding: 24px 0;
+    }
+
+    .home__row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__title {
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .header__para--primary {
+        margin: 16px 0;
+        text-align: center;
+    }
+
+    .header__img {
+        width: 500px;
+        height: 440px;
+    }
+
+    .header__left {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    .landing__svg {
+        left: -30px;
+    }
+
+    .header__para--secondary {
+        margin-top: 24px;
+    }
+
+    .portfolio__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio__description {
+        width: 460px;
+        text-align: center;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio__img {
+        width: 420px;
+        margin-top: 32px;
+        height: 250px;
+        padding-left: 0;
+        margin-right: 64px;
+    }
+
+    .portfolio__button {
+        margin: 0;
+    }
+
+    .portfolio__para {
+        margin-bottom: 24px;
+    }
+
+    .portfolio__svg {
+        bottom: 25px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #footer {
+        width: 100%;
+    }
+
+    .copyright__section {
+        padding: 24px 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+
+    .copyright__text {
+        font-size: 12px;
+    }
+
+    .footer__social {
+        font-size: 18px;
+    }
+
+    .footer__links {
+
+    }
+
+    .legal {
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .pricing__intro {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing__para {
+        max-width: 300px;
+    }
+
+    .plan {
+        margin-bottom: 24px;
+    }
+
+    .pricing__svg {
+        bottom: -25px;
+        left: 5px;
+    }
+
+    .testimonials__img {
+        height: 400px;
+        width: 450px;
+    }
+
+    .scroll {
+        margin-top: 12px;
+    }
+
+    .testimonials__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .values__container {
+        padding: 24px 0;
+    }
+
+    #home {
+        padding: 24px;
+    }
+
+    .home__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features--row {
+        display: flex;
+        width: 400px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .portfolio__container {
+        padding: 24px 0;
+    }
+
+    .features__container {
+        padding: 24px 0;
+    }
+
+    .features--wrapper {
+        text-align: center;
+        padding: 16px;
+    }
+
+    .feature {
+        width: calc(100% / 3);
+        text-align: center;
+    }
+
+    .values__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 440px;
+    }
+
+    .testimonials__text {
+        width: 520px;
+        padding-right: 64px;
+    }
+
+    .reviewer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 392px;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .values__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .values__text {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .values__examples {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 420px;
+    }
+
+    .value__header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .value {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features__para--primary {
+        padding-right: 18px;
+    }
+
+    .values__button {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .steps__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .steps__text {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .steps__number {
+        padding-top: 8px;
+        padding-right: 24px;
+    }
+
+    .steps__list {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step__section {
+        margin: 0;
+    }
+
+    .steps__svg {
+        left: 225px;
+        top: 200px;
+    }
+
+    .steps__img {
+        padding: 48px 48px 16px 48px;
+    }
+
+    .steps__span {
+        margin-top: 32px;
+    }
+
+    .values__img {
+        width: 420px;
+        margin-top: 48px;
+    }
+
+    .testimonials__container {
+        padding: 24px 0;
+    }
+
+    .pricing__container {
+        padding: 24px 0;
+    }
+
+    .steps__container {
+        padding: 24px 0;
+    }
+
+    .home__row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__title {
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .header__para--primary {
+        margin: 16px 0;
+        text-align: center;
+    }
+
+    .header__img {
+        width: 500px;
+        height: 440px;
+    }
+
+    .header__left {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    .landing__svg {
+        left: -30px;
+    }
+
+    .header__para--secondary {
+        margin-top: 24px;
+    }
+
+    .portfolio__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio__description {
+        width: 460px;
+        text-align: center;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio__img {
+        width: 450px;
+        height: 310px;
+        margin: 0;
+        padding: 0;
+        margin-top: 24px;
+    }
+
+    .portfolio__img--wrapper {
+        max-width: 650px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .portfolio__button {
+        margin: 0;
+    }
+
+    .portfolio__para {
+        margin-bottom: 24px;
+    }
+
+    .portfolio__svg {
+        opacity: 0;
+    }
 }
