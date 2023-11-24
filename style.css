@@ -167,11 +167,13 @@ h1 {
 .header__left {
     display: flex;
     flex-direction: column;
-    width: 480px;
+    width: 500px;
+    margin-top: 32px;
+    padding-left: 16px;
 }
 
 .header__img {
-    width: 745px;
+    width: 720px;
     height: 537px;
 }
 
@@ -406,9 +408,9 @@ h3 {
 .portfolio__description {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    padding: 32px 0;
+    width: 50%;
     height: 434px;
+    margin-right: 32px;
 }
 
 .portfolio__title {
@@ -435,15 +437,14 @@ h3 {
 }
 
 .portfolio__img--wrapper {
-    width: 55%;
+    width: 100%;
     padding-left: 56px;
 }
 
 .portfolio__img {
-    max-width: 660px;
-    padding-left: 32px;
+    width: 590px;
     border: 1px solid #d7dce4;
-    height: 411px;
+    height: 391px;
 }
 
 
