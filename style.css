@@ -340,6 +340,7 @@ input:focus::placeholder {
 
 #features {
     position: relative;
+    overflow-x: hidden;
 }
 
 .features__svg {
@@ -1100,6 +1101,12 @@ i {
 /*   FOOTER   */ 
 
 
+#footer {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .footer__container {
     height: 480px;
     display: flex;
@@ -1125,7 +1132,7 @@ i {
     width: 296px;
     height: 236px;
     transform: translateX(125px);
-    bottom: -5px;
+    bottom: -45px;
     right: 50px;
 }
 
