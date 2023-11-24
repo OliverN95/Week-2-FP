@@ -31,10 +31,6 @@ span {
     transform: translateX(-125px);
 }
 
-svg {
-    position: absolute;
-}
-
 
 /*  NAVIGATION BAR  */
 
@@ -118,22 +114,104 @@ nav {
     border-bottom: 2px solid #6415ff;
 }
 
-.burger__menu {
-    color: black;
+.btn__menu {
     background-color: transparent;
-    font-size: 36px;
-    text-align: center;
-    border: none;
+    padding: 0;
+    border-radius: 0;
+    border-bottom: none;
+    color: #242424;
+    display: none;
 }
 
-.burger__bars {
+.btn__bars {
     color: #6415ff;
     font-size: 24px;
+    transition: all 100ms ease;
+}
+
+.btn__bars:hover {
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: white; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.btn__menu:hover {
+    text-decoration: none;
+    border-bottom: none;
+    background-color: white;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    font-size: 36px;
+}
+
+.btn__menu--times {
+    color: #6415ff;
+}
+
+.btn__menu--close:hover {
+    background-color: 242424;
 }
 
 .menu__backdrop--list {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.menu__link, .menu__link--primary {
+    color: #242424;
+    font-weight: bold;
+}
+
+.menu__link {
+    margin-bottom: 24px;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.menu__link--primary {
+    color: white;
+    background-color: #6415ff;
+    border-radius: 38px;
+    transition: all 200ms ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    width: 145px;
+    text-align: center;
+}
+
+.sign__up {
+    color: white;
+}
+
+.menu__link--primary:hover {
+    background-color: rgb(45, 45, 112);
+}
+
+.menu--open .menu__backdrop {
+    display: flex;
 }
 
 
@@ -266,11 +344,10 @@ input:focus::placeholder {
 .features__svg {
     position: absolute;
     height: 244px;
-    width: 324px;
-    right: 0;
+    width: 344px;
+    right: 0px;
     top: 570px;
     opacity: 0.3;
-    transform: translateX(125px);
 }
 
 .features__container {
@@ -442,7 +519,7 @@ h3 {
 }
 
 .portfolio__img {
-    width: 590px;
+    width: 610px;
     border: 1px solid #d7dce4;
     height: 391px;
 }
@@ -1151,6 +1228,14 @@ hr {
         width: 100%;
     }
 
+    .btn__menu {
+        display: flex;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
     .copyright__section {
         padding: 24px 0;
         display: flex;
@@ -1212,7 +1297,7 @@ hr {
     }
 
     .values__container {
-        padding: 24px 0;
+        padding: 48px 0;
     }
 
     #home {
@@ -1225,21 +1310,11 @@ hr {
     }
 
     .portfolio__container {
-        padding: 24px 0;
+        padding: 48px 0;
     }
 
     .features__container {
-        padding: 24px 0;
-        text-align: center;
-    }
-
-    .features--wrapper {
-        text-align: center;
-        padding: 16px;
-    }
-
-    .feature {
-        width: calc(100% / 1);
+        padding: 48px 0;
         text-align: center;
     }
 
@@ -1354,15 +1429,15 @@ hr {
     }
 
     .testimonials__container {
-        padding: 24px 0;
+        padding: 48px 0;
     }
 
     .pricing__container {
-        padding: 24px 0;
+        padding: 48px 0;
     }
 
     .steps__container {
-        padding: 24px 0;
+        padding: 48px 0;
     }
 
     .home__row {
@@ -1420,6 +1495,7 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-right: 0;
     }
 
     #portfolio {
@@ -1447,6 +1523,10 @@ hr {
     .portfolio__svg {
         bottom: 25px;
     }
+
+    .pricing__container {
+        padding: 48px 0;
+    }
 }
 
 
@@ -1454,6 +1534,22 @@ hr {
 @media (max-width: 768px) {
     #footer {
         width: 100%;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .btn__menu {
+        display: flex;
+    }
+
+    .btn__bars {
+        font-size: 36px;
+    }
+
+    .header__title, .features__title, .portfolio__title, .steps__heading, .values__heading, .pricing__header, .testimonials__header {
+        font-size: 32px;
     }
 
     .copyright__section {
@@ -1472,7 +1568,8 @@ hr {
     }
 
     .footer__links {
-
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .legal {
@@ -1530,29 +1627,12 @@ hr {
         align-items: center;
     }
 
-    .features--row {
-        display: flex;
-        width: 400px;
-        text-align: center;
-        justify-content: center;
-    }
-
     .portfolio__container {
         padding: 24px 0;
     }
 
     .features__container {
         padding: 24px 0;
-    }
-
-    .features--wrapper {
-        text-align: center;
-        padding: 16px;
-    }
-
-    .feature {
-        width: calc(100% / 3);
-        text-align: center;
     }
 
     .values__text {
@@ -1767,5 +1847,23 @@ hr {
 
     .portfolio__svg {
         opacity: 0;
+    }
+}
+
+@media (max-width: 833px) {
+    .btn__menu {
+        display: flex;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .btn__bars {
+        font-size: 36px;
+    }
+
+    nav {
+        padding: 16px;
     }
 }
