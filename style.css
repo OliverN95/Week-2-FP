@@ -233,8 +233,8 @@ h1 {
 }
 
 .customer__logo {
-    height: 60px;
     max-width: 380px;
+    width: 100%;
     margin-right: 8px;
     display: block;
 }
@@ -251,7 +251,6 @@ h1 {
 .header__img {
     max-width: 720px;
     width: 100%;
-    height: 537px;
 }
 
 .header__para--primary {
@@ -273,14 +272,10 @@ p {
     line-height: 1.5;
 }
 
-.header__img--wrapper {
-    display: flex;
-    width: 600px;
-}
-
 .call__to__action {
     border: 2px solid rgb(226,232,240);
-    width: 448px;
+    max-width: 442px;
+    width: 100%;
     display: flex;
     height: 68px;
     align-items: center;
@@ -492,7 +487,6 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 434px;
     margin-right: 32px;
 }
 
@@ -519,15 +513,10 @@ h3 {
     font-weight: 900;
 }
 
-.portfolio__img--wrapper {
-    width: 100%;
-    padding-left: 56px;
-}
-
 .portfolio__img {
-    width: 610px;
+    max-width: 550px;
+    width: 100%;
     border: 1px solid #d7dce4;
-    height: 391px;
 }
 
 
@@ -567,16 +556,11 @@ h3 {
 }
 
 .steps__img {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.steps__img--wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .steps__text {
@@ -807,7 +791,8 @@ h3 {
 
 .pricing__para {
     text-align: center;
-    width: 576px;
+    max-width: 576px;
+    width: 100%;
     color: #7C8BA1;
     margin-top: 16px;
     font-size: 18px;
@@ -845,10 +830,14 @@ h3 {
 
 .plan__head {
     display: flex;
+    max-width: 384px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 32px 0;
+    border-bottom: 1px solid lightgrey;
+    
 }
 
 .plan__title {
@@ -896,10 +885,15 @@ h3 {
     align-items: center;
     padding: 32px;
     margin: 0 -32px;
+    max-width: 384px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
 }
 
 .plan__tail {
     padding: 32px 64px;
+    max-width: 384px;
+    width: 100%;
 }
 
 .plan__feature {
@@ -962,12 +956,6 @@ h3 {
     box-shadow: 0 10px 10px rgb(45, 45, 112);
 }
 
-.breaker {
-    height: 1px;
-    background-color: lightgrey;
-    width: 384px;
-}
-
 
 /*   TESTIMONIALS   */ 
 
@@ -985,7 +973,8 @@ h3 {
 }
 
 .testimonials__img {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 388px;
 }
 
@@ -1034,7 +1023,8 @@ h3 {
 .reviewer {
     display: flex;
     justify-content: space-between;
-    width: 576px;
+    max-width: 576px;
+    width: 100%;
 }
 
 .charlotte {
@@ -1110,7 +1100,6 @@ i {
 }
 
 .footer__container {
-    height: 480px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1239,9 +1228,72 @@ hr {
 
 /*  MEDIA QUERIES  */ 
 
+
+@media (max-width:410px) {
+    .reviewer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scroll {
+        margin-top: 16px;
+    }
+
+    .testimonials__img {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:633px) {
+    .footer__links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__icons {
+        margin-top: 8px;
+    }
+
+    .footer__link--column {
+        max-width: calc(100% / 4);
+        width: 100%;
+    }
+
+    .legal {
+        text-align: center;
+    }
+
+    .call__to__action {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customer__logo {
+        margin: 0;
+    }
+
+    .home__button {
+        margin-top: 36px;
+        margin-bottom: 24px;
+    }
+
+    input {
+        padding: 0;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
 @media (max-width:768px) {
     .nav__list {
         display: none;
+    }
+
+    .personal, .business, .enterprise, .stripe {
+        max-width: 364px;
+        width: 100%;
+        padding: 0;
     }
 
     .copyright__section {
@@ -1282,18 +1334,14 @@ hr {
 
     .btn__bars {
         font-size: 30px;
-    }
-
-    svg {
-        display: none;
-    }    
-
+    }  
     
-    .home__row, .features__row, .portfolio__row, .steps__row, .values__row {
+    .home__row, .features__row, .portfolio__row, .steps__row, .values__row, .pricing__row {
         display: flex;
         flex-direction: column;
         max-width: 756px;
         width: 100%;
+        align-items: center;
     }
 
     .testimonials__row {
@@ -1307,10 +1355,6 @@ hr {
         max-width: 756px;
         align-items: center;
         text-align: center;
-    }
-
-    .testimonials__img {
-        margin-top: 48px;
     }
 
     .header__left {
@@ -1343,6 +1387,35 @@ hr {
         text-align: center;
     }
 
+    .portfolio__img {
+        margin-top: 24px;
+        width: 100%;
+        max-width: 470px;
+    }
+
+    .portfolio__title {
+        font-size: 32px;
+    }
+
+    .steps__img {
+        width: 100%;
+        max-width: 570px; 
+    }
+
+    .portfolio__container {
+        margin: 0;
+        padding: 56px 0;
+    }
+
+    .portfolio__para {
+        text-align: center;
+        padding: 8px;
+    }
+
+    .portfolio__description {
+        padding: 12px;
+    }
+
     .footer__links {
         max-width: 745px;
         width: 100%;
@@ -1364,10 +1437,21 @@ hr {
 
     .values__text {
         padding: 0;
+        width: 100%;
+        max-width: 650px;
     }
 
     .values__examples {
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 560px;
+        width: 100%;
+    }
+
+    .value__header {
+        display: flex;
+        justify-content: center;
     }
 
     .value {
@@ -1386,7 +1470,74 @@ hr {
         align-items: center;
     }
 
-    .steps__container, .portfolio__container, .values__container, .pricing__container, .testimonials__container {
+    .steps__container, #home, .container .portfolio__container, .values__container, .pricing__container, .testimonials__container {
         padding: 56px 0;
+    }
+
+    .feature {
+        padding: 24px;
+        margin: 0;
+        max-width: calc(100% / 1);
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature__img {
+        padding: 12px;
+    }
+
+    h3 {
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    .feature__info {
+        margin-left: 8px;
+        margin-top: 16px;
+    }
+
+    .features__wrapper {
+        max-width: 745px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .header__para--primary {
+        color: #243E63;
+        font-size: 14px;
+    }
+
+    .header__title, .features__title, .steps__heading {
+        font-size: 32px;
+    }
+
+    .steps__svg, .portfolio__svg, .pricing__svg {
+        display: none;
+    }
+
+    .values__heading, .pricing__header, .testimonials__header {
+        font-size: 32px;
+    }
+
+    .register, .download, .run {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step__section {
+        margin-left: 0;
+    }
+
+    .step__title {
+        margin-top: 8px;
+    }
+
+    .review__stars {
+        margin-top: 36px;
     }
 }    
