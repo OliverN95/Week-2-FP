@@ -234,7 +234,7 @@ h1 {
 
 .customer__logo {
     height: 60px;
-    width: 480px;
+    max-width: 380px;
     margin-right: 8px;
     display: block;
 }
@@ -242,13 +242,15 @@ h1 {
 .header__left {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin-top: 32px;
     padding-left: 16px;
 }
 
 .header__img {
-    width: 720px;
+    max-width: 720px;
+    width: 100%;
     height: 537px;
 }
 
@@ -1237,331 +1239,41 @@ hr {
 
 /*  MEDIA QUERIES  */ 
 
-@media (max-width: 576px) {
-    #footer {
-        width: 100%;
-    }
-
-    .feature {
-        max-width: calc(100% / 6);
-        margin: 0;
-    }
-
-    .features--wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    .btn__menu {
-        display: flex;
-    }
-
+@media (max-width:768px) {
     .nav__list {
         display: none;
     }
 
     .copyright__section {
-        padding: 24px 0;
+        max-width: 743px;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 8px;
     }
 
-    .copyright__text {
-        font-size: 12px;
-    }
-
-    .footer__social {
+    .copyright__logo--text {
         font-size: 18px;
     }
 
-    .legal {
-        text-align: center;
-        padding-top: 12px;
+    .copyright__text {
+        font-size: 13px;
     }
 
-    .pricing__intro {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+    .copyright__img {
+        width: 35px;
+        height: 35px;
     }
 
-    .pricing__para {
-        max-width: 300px;
+    .footer__logo {
+        padding-top: 16px;
     }
 
-    .plan {
-        margin-bottom: 24px;
+    .footer__icon {
+        font-size: 20px;
     }
 
-    .pricing__svg {
-        bottom: -25px;
-        left: 5px;
-    }
-
-    .testimonials__img {
-        height: 400px;
-        width: 450px;
-    }
-
-    .scroll {
-        margin-top: 12px;
-    }
-
-    .testimonials__row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-
-    .values__container {
-        padding: 48px 0;
-    }
-
-    #home {
-        padding: 24px;
-    }
-
-    .features--row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .portfolio__container {
-        padding: 48px 0;
-    }
-
-    .features__container {
-        padding: 48px 0;
-        text-align: center;
-    }
-
-    .values__text {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 440px;
-    }
-
-    .testimonials__text {
-        width: 520px;
-        padding-right: 64px;
-    }
-
-    .reviewer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 392px;
-        text-align: center;
-        margin-top: 16px;
-    }
-
-    .values__row {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .values__text {
-        text-align: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .values__examples {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        width: 420px;
-    }
-
-    .value__header {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .value {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .features__para--primary {
-        padding-right: 18px;
-    }
-
-    .values__button {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .steps__row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .steps__text {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .steps__number {
-        padding-top: 8px;
-        padding-right: 24px;
-    }
-
-    .steps__list {
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .step__section {
-        margin: 0;
-    }
-
-    .steps__svg {
-        left: 225px;
-        top: 200px;
-    }
-
-    .steps__img {
-        padding: 48px 48px 16px 48px;
-    }
-
-    .steps__span {
-        margin-top: 32px;
-    }
-
-    .values__img {
-        width: 420px;
-        margin-top: 48px;
-    }
-
-    .testimonials__container {
-        padding: 48px 0;
-    }
-
-    .pricing__container {
-        padding: 48px 0;
-    }
-
-    .steps__container {
-        padding: 48px 0;
-    }
-
-    .home__row {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header__title {
-        text-align: center;
-        padding-top: 12px;
-    }
-
-    .header__para--primary {
-        margin: 16px 0;
-        text-align: center;
-    }
-
-    .header__img {
-        width: 500px;
-        height: 440px;
-    }
-
-    .header__left {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 500px;
-    }
-
-    .landing__svg {
-        left: -30px;
-    }
-
-    .header__para--secondary {
-        margin-top: 24px;
-    }
-
-    .portfolio__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .portfolio__container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .portfolio__description {
-        width: 460px;
-        text-align: center;
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0;
-    }
-
-    #portfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .portfolio__img {
-        width: 420px;
-        margin-top: 32px;
-        height: 250px;
-        padding-left: 0;
-        margin-right: 64px;
-    }
-
-    .portfolio__button {
-        margin: 0;
-    }
-
-    .portfolio__para {
-        margin-bottom: 24px;
-    }
-
-    .portfolio__svg {
-        bottom: 25px;
-    }
-
-    .pricing__container {
-        padding: 48px 0;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    #footer {
-        width: 100%;
-    }
-
-    .nav__list {
-        display: none;
+    .footer__icons {
+        padding-bottom: 8px;
     }
 
     .btn__menu {
@@ -1569,592 +1281,112 @@ hr {
     }
 
     .btn__bars {
-        font-size: 36px;
+        font-size: 30px;
     }
 
-    .header__title, .features__title, .portfolio__title, .steps__heading, .values__heading, .pricing__header, .testimonials__header {
-        font-size: 32px;
-    }
+    svg {
+        display: none;
+    }    
 
-    .copyright__section {
-        padding: 24px 0;
+    
+    .home__row, .features__row, .portfolio__row, .steps__row, .values__row {
         display: flex;
         flex-direction: column;
-        margin-bottom: 8px;
-    }
-
-    .copyright__text {
-        font-size: 12px;
-    }
-
-    .footer__social {
-        font-size: 18px;
-    }
-
-    .footer__links {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .legal {
-        text-align: center;
-        padding-top: 12px;
-    }
-
-    .pricing__intro {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .pricing__para {
-        max-width: 300px;
-    }
-
-    .plan {
-        margin-bottom: 24px;
-    }
-
-    .pricing__svg {
-        bottom: -25px;
-        left: 5px;
-    }
-
-    .testimonials__img {
-        height: 400px;
-        width: 450px;
-    }
-
-    .scroll {
-        margin-top: 12px;
+        max-width: 756px;
+        width: 100%;
     }
 
     .testimonials__row {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-
-    .values__container {
-        padding: 24px 0;
-    }
-
-    #home {
-        padding: 24px;
-    }
-
-    .home__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .portfolio__container {
-        padding: 24px 0;
-    }
-
-    .features__container {
-        padding: 24px 0;
-    }
-
-    .values__text {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 440px;
+        flex-direction: column-reverse;
     }
 
     .testimonials__text {
-        width: 520px;
-        padding-right: 64px;
-    }
-
-    .reviewer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 392px;
-        text-align: center;
-        margin-top: 16px;
-    }
-
-    .values__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .values__text {
-        text-align: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
         padding: 0;
-    }
-
-    .values__examples {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        width: 420px;
-    }
-
-    .value__header {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .value {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .features__para--primary {
-        padding-right: 18px;
-    }
-
-    .values__button {
-        justify-content: center;
+        width: 100%;
+        max-width: 756px;
         align-items: center;
         text-align: center;
     }
 
-    .steps__row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .steps__text {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .steps__number {
-        padding-top: 8px;
-        padding-right: 24px;
-    }
-
-    .steps__list {
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .step__section {
-        margin: 0;
-    }
-
-    .steps__svg {
-        left: 225px;
-        top: 200px;
-    }
-
-    .steps__img {
-        padding: 48px 48px 16px 48px;
-    }
-
-    .steps__span {
-        margin-top: 32px;
-    }
-
-    .values__img {
-        width: 420px;
+    .testimonials__img {
         margin-top: 48px;
     }
 
-    .testimonials__container {
-        padding: 24px 0;
-    }
-
-    .pricing__container {
-        padding: 24px 0;
-    }
-
-    .steps__container {
-        padding: 24px 0;
-    }
-
-    .home__row {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header__title {
-        text-align: center;
-        padding-top: 12px;
-    }
-
-    .header__para--primary {
-        margin: 16px 0;
-        text-align: center;
-    }
-
-    .header__img {
-        width: 500px;
-        height: 440px;
-    }
-
     .header__left {
+        align-items: center;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 500px;
-    }
-
-    .landing__svg {
-        left: -30px;
-    }
-
-    .header__para--secondary {
-        margin-top: 24px;
-    }
-
-    .portfolio__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .portfolio__container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .portfolio__description {
-        width: 460px;
-        text-align: center;
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 32px;
-    }
-
-    #portfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .portfolio__img {
-        width: 450px;
-        height: 310px;
-        margin: 0;
         padding: 0;
-        margin-top: 24px;
-    }
-
-    .portfolio__img--wrapper {
+        margin: 0;
         max-width: 650px;
-        padding: 0;
-        margin: 0;
+        width: 100%;
     }
 
-    .portfolio__button {
-        margin: 0;
+    .header__img, .values__img, .steps__img, .portfolio__img, .testimonials__img, . {
+        max-width: 756px;
+        width: 100%;
     }
 
-    .portfolio__para {
-        margin-bottom: 24px;
+    .header__title {
+        font-size: 48px;
     }
 
-    .portfolio__svg {
-        opacity: 0;
-    }
-}
-
-@media (max-width: 833px) {
-    .btn__menu {
+    .features__intro, .portfolio__description, .values__text, .pricing__intro {
+        max-width: 700px;
+        width: 100%;
         display: flex;
-    }
-
-    .nav__list {
-        display: none;
-    }
-
-    .btn__bars {
-        font-size: 36px;
-    }
-
-    nav {
-        padding: 16px;
-    }
-}
-
-@media (max-width: 503px) {
-    .header__left {
-        padding: 42px;
-    }
-
-    .customer__logo {
-        width: 400px;
-    }
-
-    .portfolio__description {
-        margin-bottom: 0;
-    }
-
-    .portfolio__img {
-        margin-top: 0;
-        height: 290px;
-    }
-
-    .steps__img {
-        width: 500px;
-    }
-
-    .steps__svg {
-        display: none;
-    }
-
-    .pricing__row {
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        margin: 0 auto;
     }
 
-    .portfolio__row {
-        display: flex;
-        flex-direction: column;
+    .portfolio__title, .values__heading, .pricing__header {
+        text-align: center;
+    }
+
+    .footer__links {
+        max-width: 745px;
+        width: 100%;
+    }
+
+    .enterprise, .business {
+        margin-top: 48px;
+    }
+
+    .pricing__para {
+        margin-bottom: 16px;
+    }
+
+    .values__img {
+        margin-top: 48px;
+        max-width: 610px;
+        width: 100%;
+    }
+
+    .values__text {
+        padding: 0;
+    }
+
+    .values__examples {
         align-items: center;
     }
 
     .value {
         margin-right: 0;
-        margin-top: 8px;
-    }
-
-    .values__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer__links {
-        width: 460px;
-    }
-
-    .footer__link--column {
-        width: calc(100% / 5)
-    }
-}
-
-@media (max-width: 380px) {
-    nav {
-        padding: 0;
-    }
-
-    .footer__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header__title, .features__title, .portfolio__title, .steps__heading, .values__heading, .pricing__header, .testimonials__header {
-        font-size: 26px;
-    }
-
-    .copyright__section {
-        margin-bottom: 32px;
-    }
-
-    .header__left, .call__to__action {
-        padding: 0;
-        width: 300px;
-    }
-
-    input {
-        width: 220px;
-        font-size: 12px;
-    }
-
-    .call__to__action {
-        display: flex;
-        width: 330px;
-        justify-content: center;
-    }
-
-    .home__button {
-        width: 100px;
-        font-size: 14px;
-        margin-right: px;
-        padding: 12px;
-        margin: 0;
-    }
-
-    .customer__logo {
-        width: 310px;
-        height: 45px;
-    }
-
-    .header__img {
-        width: 320px;
-        height: 290px;
-    }
-
-    .landing__svg {
-        display: none;
-    }
-
-    .portfolio__description {
-        width: 345px;
-    }
-
-    .portfolio__img {
-        width: 310px;
-        height: 180px;
-        margin-top: 24px;
-    }
-
-    .values__img {
-        width: 310px;
-        height: 200px;
-    }
-
-    .steps__img {
-        padding-top: 8px;
-        width: 420px;
-    }
-
-    .steps__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .features__intro {
-        padding: 16px;
-    }
-
-    .features__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .features__title {
-        font-size: 26px;
-    }
-
-    .step__section, .step__para {
-        width: 200px;
-    }
-
-    .steps__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pricing__svg {
-        display: none;
-    }
-
-    .testimonials__img {
-        width: 310px;
-        height: 280px;
-        margin-bottom: 24px;
-    }
-
-    .testimonials__row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonials__text {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonials__para, .review__quote {
-        width: 330px;
-    }
-
-    .values__text, p {
-        width: 320px;
+        margin-left: 12px;
     }
 
     .values__para {
-        margin-bottom: 12px;
+        text-align: center;
     }
 
-    .reviewer {
-        width: 330px;
+    .steps__text {
+        margin: 56px 0px 0px 0px;
+        padding: 0;
+        text-align: center;
+        align-items: center;
     }
 
-    .charlotte__name, .charlotte__job {
-        width: 190px;
-        padding-left: 0;
+    .steps__container, .portfolio__container, .values__container, .pricing__container, .testimonials__container {
+        padding: 56px 0;
     }
-
-    .footer__svg--one, .footer__svg--two {
-        display: none;
-    }
-
-    .footer__links {
-        width: 320px;
-        margin-bottom: 0;
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 8px;
-    }
-
-    h5 {
-        font-size: 12px;
-    }
-
-    .footer__link {
-        font-size: 10px;
-    }
-
-    .footer__link--column {
-        margin-bottom: 0;
-        width: calc(100% / 6);
-        margin-left: 8px;
-    }
-
-    .feature__para {
-        max-width: 190px;
-    }
-
-    .feature {
-        max-width: calc(100% / 1);
-        width: calc(100% / 1);
-        margin: 0;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    .features--wrapper {
-        display: flex;
-    }
-
-    .features__container {
-        display: flex;
-    }
-
-    .personal, .business, .enterprise, .stripe, .breaker {
-        max-width: 300px;
-    }
-
-    .plan__body, .plan__tail {
-        max-width: 300px;
-    }
-
-}
+}    
