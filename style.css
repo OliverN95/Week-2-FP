@@ -1542,8 +1542,12 @@ hr {
         margin-top: 36px;
     }
 
-    .values__container, .testimonials__container {
+    .values__container, .testimonials__container, .steps__container, .pricing__container {
         margin: 0 24px;
+    }
+
+    .step__para {
+        font-size: 16px;
     }
 } 
 
@@ -1554,7 +1558,7 @@ hr {
     }
 
     .personal, .business, .enterprise, .stripe {
-        max-width: 364px;
+        max-width: 324px;
         width: 100%;
         padding: 0;
     }
