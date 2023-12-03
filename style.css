@@ -1509,7 +1509,8 @@ hr {
 
     .header__para--primary {
         color: #243E63;
-        font-size: 14px;
+        font-size: 16px;
+        margin-bottom: 12px;
     }
 
     .header__title, .features__title, .steps__heading {
@@ -1540,4 +1541,21 @@ hr {
     .review__stars {
         margin-top: 36px;
     }
-}    
+
+    .values__container, .testimonials__container {
+        margin: 0 24px;
+    }
+} 
+
+@media (max-width:354px) {
+    .footer__link--column {
+        max-width: calc(100% / 3);
+        width: 100%;
+    }
+
+    .personal, .business, .enterprise, .stripe {
+        max-width: 364px;
+        width: 100%;
+        padding: 0;
+    }
+}
