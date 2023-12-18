@@ -553,21 +553,18 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 52px;
+    padding-left: 32px;
+    margin-left: 32px;
 }
 
 .steps__img {
     max-width: 600px;
-    width: 100%;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.steps__text {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 32px;
-    margin-left: 32px;
+    margin-top: 48px;
 }
 
 .steps__heading {
